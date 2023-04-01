@@ -1,0 +1,36 @@
+﻿//wiimote.key
+//Up, Down, Left, Right, A, B, Minus, Home, Plus One, Two
+//Developed by: Damaged_Coda
+
+//LED
+Wiimote.led1 = false
+Wiimote.Led2 = true
+Wiimote.Led3 = true
+Wiimote.led4 = false
+
+//Arrow Keys
+keyboard.Down  = Wiimote.Down
+keyboard.Up    = Wiimote.Up
+keyboard.Left    = Wiimote.Left
+keyboard.Right    = Wiimote.Right
+keyboard.LeftWindows  = Wiimote.Home
+
+//1. 2
+keyboard.tab = Wiimote.Two
+keyboard.escape = Wiimote.One
+
+//A,B
+//keyboard.enter = Wiimote.A
+mouse.LeftButton = Wiimote.A
+mouse.RightButton = Wiimote.B
+
+//Volume
+keyboard.VolumeUp = wiimote.Plus
+keyboard.VolumeDown = wiimote.Minus
+
+
+//Cursor (requires sensor)
+if wiimote.PointerVisible but not var.PointerBump then
+  mouse.x = wiimote.PointerX
+  mouse.y = wiimote.PointerY
+end if
